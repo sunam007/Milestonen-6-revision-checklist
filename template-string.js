@@ -1,7 +1,5 @@
-//Declare an object which has atleast 5 properties (number,string,boolean,array, object,method that will return a property);
-
 const university = {
-  name: "Ahsanullah University of Science and Tech",
+  name: "Ahsanullah University of Science and Technology",
   student: 7000,
   department: ["Architechture", "BBA", "CSE", "Civil", "EEE", "Mechanical"],
   ugcApproved: true,
@@ -14,11 +12,14 @@ const university = {
 
   method: function () {
     //accessing nested object property
-    console.log("Address: " + this.location.street);
+    // console.log("Address: " + this.location.street);
     const info = `${this.name} has ${this.student} students.`;
     return info;
   },
 };
 
-const statement = university.method();
-console.log(statement);
+const templateString = `${university.method()} 
+${university.name} has ${200 * 8} students
+in the department of ${university.department[4]}.
+`;
+console.log(templateString);
