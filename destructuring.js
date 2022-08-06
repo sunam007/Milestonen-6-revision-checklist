@@ -15,4 +15,16 @@ const university = {
 const { name, student, ugcApproved } = university;
 const { area, country } = university.location;
 console.log(name, student, ugcApproved, country, area);
+
 // array destructuring
+
+const department = [
+  "Architechture",
+  "BBA",
+  "CSE",
+  "Civil",
+  "EEE",
+  "Mechanical",
+];
+const [a, businessFaculty] = department;
+console.log(businessFaculty);
